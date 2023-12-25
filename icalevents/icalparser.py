@@ -107,7 +107,6 @@ class Event:
         return "%s: %s (%s)" % (self.start, self.summary, self.end - self.start)
 
     def astimezone(self, tzinfo):
-
         if type(self.start) is datetime:
             self.start = self.start.astimezone(tzinfo)
 
